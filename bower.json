@@ -1,0 +1,25 @@
+{
+  "name": "triviaapp",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.2.13",
+    "json3": "~3.2.6",
+    "es5-shim": "~2.1.0",
+    "angular-cookies": "1.2.6",
+    "angular-sanitize": "1.2.6",
+    "foundation": "~5.1.0",
+    "jquery-validation": "~1.13.0",
+    "angular-resource": "~1.2.11",
+    "angular-route": "~1.2.11",
+    "angular-dreamfactory": "*",
+    "angular-mocks": "~1.2.13",
+    "jquery": "~2.1.0"
+  },
+  "devDependencies": {
+    "angular-mocks": "~1.2.13",
+    "angular-scenario": "~1.2.13"
+  },
+  "resolutions": {
+    "angular": "~1.2.13"
+  }
+}

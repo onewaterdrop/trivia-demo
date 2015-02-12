@@ -1,0 +1,87 @@
+<div class="wrapper">
+
+    <!-- Main Question Container -->
+
+    <div class="row">
+        <div class="small-12 large-10 medium-8 medium-offset-2 large-offset-1 columns">
+
+            <!-- Logo Display -->
+            <div class="row hide-for-small-only">
+                <div class="small-8 small-offset-2 medium-4 medium-offset-4 large-4 large-offset-4 columns">
+                    <img src="../images/df_popcorn.png" width="100%">
+                </div>
+            </div>
+
+            <!-- Question Display -->
+            <div class="row">
+                <div style="margin-top: 10px; margin-bottom: 5px; height: 120px; display: table;"
+                     class="small-12 columns">
+                    <h4 style="display: table-cell; vertical-align: middle; color: #D6EEFF" id="question">
+                        {{question}}</h4>
+                </div>
+            </div>
+
+            <!-- Answer Display -->
+            <div class="row">
+                <div class="small-12 columns">
+                    <form name="answerForm">
+                        <input type="text" id="answer" data-ng-model="userAnswer" placeholder="Enter Answer">
+                    </form>
+                </div>
+            </div>
+
+            <!-- Submit Answer Display -->
+            <div class="row">
+                <div class="small-12 columns">
+                    <button id="submit-answer" class="button expand" type="button"
+                            data-ng-click="verifyAnswer(userAnswer)">
+                        Submit Answer
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Cheat Display-->
+
+            <div class="row">
+                <div class="small-12 columns">
+                    <div class="cheat-button">
+                        <hr />
+                        <button type="button" class="button super-tiny" data-ng-click="cheatMode()">Cheat</button>
+                        <p data-ng-show="cheatModeEnabled" style="float:right; " id="cheat-answer" class="error">
+                            {{cheatAnswer}}</p>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="push"></div>
+</div>
+
+<!-- User Information Display -->
+<div class="footer">
+    <div class="row">
+        <div class="small-12 columns">
+
+            <!-- User Display -->
+            <div style="text-align:left;" class="small-6 large-6 columns">
+
+                <!-- User Name Display -->
+                <div>
+                    <p>User:</p>
+
+                    <h2 id="user-name-display">{{user.displayName}}</h2>
+                </div>
+            </div>
+
+            <!-- User Score Display -->
+            <div style="text-align: right" class="small-6 large-6 columns">
+                <p>Score:</p>
+
+                <h2 id="score">{{score}}</h2>
+            </div>
+        </div>
+    </div>
+</div>

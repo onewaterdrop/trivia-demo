@@ -1,0 +1,37 @@
+<div class="row">
+    <div class="small-10 small-offset-1 large-8 large-offset-2 columns">
+        <!-- Logo Display -->
+        <div class="row">
+            <div class="small-12 medium-10 medium-offset-1 columns">
+                <img src="../images/df_popcorn.png" width="100%">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="small-12 medium-10 medium-offset-1">
+
+                <form name="login-form" data-ng-submit="register(creds)">
+                    <div class="email-field">
+                        <input type="email" id="email" name="email" placeholder="Enter Email"
+                               data-ng-model="creds.email" required>
+                    </div>
+
+                    <div class="password-field">
+                        <input type="password" id="password" name="password" placeholder="Enter Password"
+                               data-ng-model="creds.password" data-ng-keyup="verifyUserPassword(creds)" required>
+                    </div>
+
+                    <div class="password-field">
+                        <input type="password" id="password-confirm" name="password-confirm"
+                               placeholder="Confirm Password"
+                               data-ng-model="creds.confirm" data-ng-keyup="verifyUserPassword(creds)"
+                               data-ng-class="{'has-error': identical === false}" required>
+                    </div>
+
+                    <!-- <input type="submit" value="submit"> -->
+                    <input class="button expand" id="submit-register" type="submit" value="Register">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
