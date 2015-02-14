@@ -89,7 +89,7 @@ angular.module('triviaApp')
                 if (!UserService.isLoggedIn()) return false;
 
                 var record = {
-                    table_name: 'TriviaScore',
+                    table_name: 'triviascore',
                     id: UserService.getUser().id,
                     id_field: 'user',
                     body: {
