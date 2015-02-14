@@ -9,7 +9,7 @@ angular.module('triviaApp', [
     ])
     .constant('DSP_URL', 'http://dreamfactory.h1b.bitnamiapp.com')
     .constant('DSP_API_KEY', 'trivia')
-    .constant('DEV_ENV', 0)
+    .constant('DEV_ENV', 1)
     .config(['$locationProvider', function($locationProvider) {
 
         $locationProvider.html5Mode(true);
